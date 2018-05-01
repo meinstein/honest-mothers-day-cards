@@ -8,8 +8,7 @@ const styles = {
 		justifyContent: 'center',
 		flexDirection: 'column',
 		maxWidth: 800,
-		fontFamily: fonts.MANIFOLD,
-		fontWeight: 500,
+		fontFamily: fonts.LAUWERIKS,
 		lineHeight: 1.33,
 		color: colors.RED,
 		textAlign: 'center'

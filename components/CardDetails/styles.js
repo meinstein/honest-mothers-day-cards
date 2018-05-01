@@ -10,13 +10,13 @@ export default {
 		color: colors.RED
 	},
 	title: {
-		fontFamily: fonts.MANIFOLD,
-		fontWeight: 500
+		fontFamily: fonts.LAUWERIKS,
+		lineHeight: 1.33
 	},
 	desc: {
-		fontFamily: fonts.MANIFOLD,
-		fontWeight: 300,
-		marginTop: 24
+		fontFamily: fonts.LAUWERIKS,
+		marginTop: 24,
+		lineHeight: 1.33
 	},
 	buttons: {
 		display: 'flex',

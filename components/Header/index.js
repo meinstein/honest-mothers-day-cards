@@ -4,7 +4,7 @@ import styles from './styles'
 const Header = ({ style }) => (
 	<a href="/">
 		<header style={{ ...styles.container, ...style }}>
-			<img src="/static/logo.png" style={styles.img} alt="Logo" />
+			<img src="/static/logo.svg" style={styles.img} alt="Logo" />
 		</header>
 	</a>
 )

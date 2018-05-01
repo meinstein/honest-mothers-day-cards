@@ -1,4 +1,4 @@
 export default {
-	MANIFOLD: 'Manifold',
+	LAUWERIKS: 'Lauweriks',
 	OHNO: 'Ohno'
 }

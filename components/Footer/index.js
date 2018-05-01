@@ -9,7 +9,9 @@ const Footer = () => (
 		<a style={styles.link} href="/about">
 			About
 		</a>
-		<Header style={{ maxWidth: 120 }} />
+		<div style={{ width: '33.33%', textAlign: 'center' }}>
+			<img src="/static/heart.svg" style={{ width: 60 }} />
+		</div>
 		<a style={styles.link} href="/contact">
 			Contact
 		</a>

@@ -10,7 +10,9 @@ export default {
 		color: colors.RED
 	},
 	img: {
+		height: 'auto',
 		width: '100%',
-		maxWidth: 400
+		minWidth: 200,
+		maxWidth: 600
 	}
 }

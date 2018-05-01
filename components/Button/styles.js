@@ -3,8 +3,7 @@ import { fonts, colors } from '../../styles'
 export default {
 	container: {
 		textTransform: 'uppercase',
-		fontFamily: fonts.MANIFOLD,
-		fontWeight: 300,
+		fontFamily: fonts.LAUWERIKS,
 		color: colors.RED,
 		border: `1px solid ${colors.RED}`,
 		borderRadius: 6,

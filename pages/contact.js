@@ -9,8 +9,7 @@ const styles = {
 		justifyContent: 'center',
 		alignItems: 'center',
 		color: colors.RED,
-		fontFamily: fonts.MANIFOLD,
-		fontWeight: 500
+		fontFamily: fonts.LAUWERIKS
 	}
 }
 
