@@ -3,8 +3,11 @@
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
-		"start": "next start",
+		"start": "next start -p $PORT",
 		"heroku-postbuild": "npm run build"
+	},
+	"engines": {
+		"node": "8.x"
 	},
 	"dependencies": {
 		"next": "^5.1.0",
