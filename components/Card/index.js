@@ -9,7 +9,7 @@ const Card = ({ title, link, style }) => {
 				height: 'auto',
 				...style
 			}}
-			src={`/static/cards/${link}.png`}
+			src={`/static/cards/png/${link}.png`}
 		/>
 	)
 }

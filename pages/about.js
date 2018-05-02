@@ -1,40 +1,64 @@
 import { fonts, colors } from '../styles'
-import { Container, Head } from '../components'
+import { Container, Head, H1, Text, Small, Anchor } from '../components'
 
 const styles = {
-	container: {
-		display: 'flex',
-		flexGrow: 1,
-		justifyContent: 'center',
-		flexDirection: 'column',
-		maxWidth: 800,
-		fontFamily: fonts.LAUWERIKS,
-		lineHeight: 1.33,
-		color: colors.RED,
-		textAlign: 'center'
-	},
-	header: {
-		fontSize: 24
-	},
-	spacer: {
-		height: 24
+	img: {
+		maxWidth: '100%',
+		height: 'auto'
 	}
 }
 
 const About = () => (
 	<Container>
-		<Head />
-		<div style={styles.container}>
-			<div>Moms are awesome. For real, honest reasons.</div>
-			<div style={styles.spacer} />
-			<div>
-				But all the cards you find at the store are just a bunch of sappy,
-				generic bull shit.
+		<Head>
+			<link
+				rel="stylesheet"
+				type="text/css"
+				href="/static/styles/about-view.css"
+			/>
+		</Head>
+		<div className="about-view-container">
+			<div className="about-view-section">
+				<H1>Moms are awesome.</H1>
+				<H1>For real, honest reasons.</H1>
+				<Text style={{ marginTop: 20 }}>
+					But all the cards you find at the store are just a bunch of sappy,
+					generic bullshit.
+				</Text>
+				<Text style={{ marginTop: 20 }}>
+					This Mother’s Day, tell your mom why you really love her. And get
+					honest with the woman who taught you just how important honesty is.
+				</Text>
+				<Small style={{ marginTop: 20 }}>
+					Cards by{' '}
+					<Anchor href="http://www.clarejensen.com/">Clare Jensen</Anchor> and{' '}
+					<Anchor href="http://www.taylormblack.com/">Taylor Black</Anchor>.
+				</Small>
+				<Small style={{ marginTop: 20 }}>
+					Website by{' '}
+					<Anchor href="https://github.com/meinstein">Max Einstein</Anchor>
+				</Small>
+				<Small style={{ marginTop: 20 }}>
+					Ohno Blazeface Italic from{' '}
+					<Anchor href="http://www.ohnotype.co/">Ohno Type Co.</Anchor>
+				</Small>
+				<Small style={{ marginBottom: 20 }}>
+					And Lauweriks Regular by{' '}
+					<Anchor href="http://nicksherman.com/">Nick Sherman</Anchor>
+				</Small>
 			</div>
-			<div style={styles.spacer} />
-			<div>
-				This Mother’s Day, tell your mom why you really love her. And get honest
-				with the woman who taught you just how important honesty is.
+			<div className="about-view-section">
+				<img src="/static/about/clare.jpg" style={styles.img} />
+				<Small style={{ margin: '20px 0' }}>
+					Mary Clare, You’ve been the calm to my storm since day one. Love,
+					Clare
+				</Small>
+			</div>
+			<div className="about-view-section">
+				<img src="/static/about/taylor.jpg" style={styles.img} />
+				<Small style={{ margin: '20px 0' }}>
+					Julie, Thanks for the chill AF upbringing. Love, Taylor
+				</Small>
 			</div>
 		</div>
 	</Container>

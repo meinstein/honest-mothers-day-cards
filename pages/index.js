@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Head, Card, Container } from '../components'
 import { colors } from '../styles'
 import data from '../data'

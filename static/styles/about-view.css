@@ -1,20 +1,21 @@
-.card-details-container {
+.about-view-container {
 	display: flex;
-	flex-grow: 1;
 	flex-direction: row;
 	justify-content: space-between;
+	flex: 1;
+	width: 100%;
 }
 
-.card-details-section {
-	width: 45%;
+.about-view-section {
+	width: 30%;
 }
 
 @media only screen and (max-width: 800px) {
-	.card-details-container {
+	.about-view-container {
 		flex-direction: column;
 	}
 
-	.card-details-section {
+	.about-view-section {
 		width: 100%;
 	}
 }

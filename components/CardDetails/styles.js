@@ -7,21 +7,20 @@ export default {
 	},
 	textContainer: {
 		marginTop: 32,
-		color: colors.RED
-	},
-	title: {
-		fontFamily: fonts.LAUWERIKS,
-		lineHeight: 1.33
-	},
-	desc: {
-		fontFamily: fonts.LAUWERIKS,
-		marginTop: 24,
-		lineHeight: 1.33
+		color: colors.RED,
+		fontSize: '1.1em'
 	},
 	buttons: {
 		display: 'flex',
 		alignItems: 'center',
-		marginTop: 24
+		marginTop: 12,
+		flexWrap: 'wrap'
+	},
+	btn: {
+		marginTop: 12
+	},
+	btnTxt: {
+		paddingTop: 2
 	},
 	socialMedia: {
 		display: 'flex',
