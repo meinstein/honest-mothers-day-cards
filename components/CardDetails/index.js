@@ -13,7 +13,7 @@ import {
 import data from '../../data'
 import styles from './styles'
 
-export const BASE_URL = 'https://honestmothersdaycards.herokuapp.com'
+export const BASE_URL = 'http://www.honestmothersdaycards.com'
 
 const Instructions = () => (
 	<div style={{ marginTop: 24 }}>
@@ -31,11 +31,11 @@ class CardDetails extends React.Component {
 
 		const nextId = card.id + 1 > data.length ? 1 : card.id + 1
 		const nextCard = data.find(({ id }) => id === nextId)
-		const nextCardLink = `${BASE_URL}/card/${nextCard.link}`
+		const nextCardLink = `/card/${nextCard.link}`
 
 		const prevId = card.id - 1 < 1 ? 9 : card.id - 1
 		const prevCard = data.find(({ id }) => id === prevId)
-		const prevCardLink = `${BASE_URL}/card/${prevCard.link}`
+		const prevCardLink = `/card/${prevCard.link}`
 
 		return (
 			<Container>
