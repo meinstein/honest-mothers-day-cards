@@ -10,6 +10,7 @@ import {
 	Small,
 	Anchor
 } from '../../components'
+import data from '../../data'
 import styles from './styles'
 
 export const BASE_URL = 'https://honestmothersdaycards.herokuapp.com'
@@ -27,8 +28,23 @@ const Instructions = () => (
 class CardDetails extends React.Component {
 	render() {
 		const { card, pathname } = this.props
+
+		const nextId = card.id + 1 > data.length ? 1 : card.id + 1
+		const nextCard = data.find(({ id }) => id === nextId)
+		const nextCardLink = `${BASE_URL}/card/${nextCard.link}`
+
+		const prevId = card.id - 1 < 1 ? 9 : card.id - 1
+		const prevCard = data.find(({ id }) => id === prevId)
+		const prevCardLink = `${BASE_URL}/card/${prevCard.link}`
+
 		return (
 			<Container>
+				<a className="chevron" style={styles.chevronLeft} href={prevCardLink}>
+					<i className="fas fa-chevron-left" />
+				</a>
+				<a className="chevron" style={styles.chevronRight} href={nextCardLink}>
+					<i className="fas fa-chevron-right" />
+				</a>
 				<Head
 					title={card.title}
 					ogImage={`/static/cards/png/${card.link}.png`}
