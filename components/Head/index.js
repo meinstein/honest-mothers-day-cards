@@ -1,15 +1,17 @@
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const baseUrl = 'https://www.honestmothersdaycards.com'
+const baseUrl = 'https://www.honestmothersdaycards.herokuapp.com'
 const defaultDescription =
 	"Mom's are awesome. For real, honest reasons. This Mother's Day, tell your mom why you really love her with a free, honest Mother's Day card."
 const defaultOGURL = baseUrl
 const defaultOGImage = `${baseUrl}/static/logo.png`
+const defaultOGImageWidth = 1092
+const defaultOGImageHeight = 505
 
 const Head = props => (
 	<NextHead>
-		<meta charset="UTF-8" />
+		<meta charSet="UTF-8" />
 		<title>{props.title || "Honest Mother's Day Cards"}</title>
 		<meta
 			name="description"
@@ -32,8 +34,14 @@ const Head = props => (
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:image" content={props.ogImage || defaultOGImage} />
 		<meta property="og:image" content={props.ogImage || defaultOGImage} />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
+		<meta
+			property="og:image:width"
+			content={props.ogImageWidth || defaultOGImageWidth}
+		/>
+		<meta
+			property="og:image:height"
+			content={props.ogImageHeight || defaultOGImageHeight}
+		/>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" />
 		{props.children}
 	</NextHead>

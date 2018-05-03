@@ -12,6 +12,8 @@ import {
 } from '../../components'
 import styles from './styles'
 
+const BASE_URL = 'https://honestmothersdaycards.herokuapp.com'
+
 const Instructions = () => (
 	<div style={{ marginTop: 24 }}>
 		<Small>Instructions:</Small>
@@ -24,11 +26,16 @@ const Instructions = () => (
 
 class CardDetails extends React.Component {
 	render() {
-		const { card } = this.props
-
+		const { card, pathname } = this.props
 		return (
 			<Container>
-				<Head>
+				<Head
+					title={card.title}
+					ogImage={`/static/cards/png/${card.link}.png`}
+					ogImageWidth={1275}
+					ogImageHeight={1650}
+					url={`${BASE_URL}${pathname}`}
+				>
 					<link
 						rel="stylesheet"
 						type="text/css"
@@ -45,11 +52,11 @@ class CardDetails extends React.Component {
 						<Text style={{ marginTop: 20 }}>{card.desc}</Text>
 						<div style={{ marginTop: 24 }}>
 							<Small>
-								Designed by:{' '}
+								Designed by{' '}
 								<Anchor href="http://www.clarejensen.com/">Clare Jensen</Anchor>
 							</Small>
 							<Small>
-								Written by:{' '}
+								Written by{' '}
 								<Anchor href="http://www.taylormblack.com/">
 									Taylor Black
 								</Anchor>
@@ -69,7 +76,7 @@ class CardDetails extends React.Component {
 						<Instructions />
 						<div style={styles.buttons}>
 							<a
-								href={`/print?card=${card.link}`}
+								href={`/static/cards/pdf/${card.link}.pdf`}
 								target="_blank"
 								style={{ ...styles.btn, marginRight: 12 }}
 							>
@@ -93,12 +100,25 @@ class CardDetails extends React.Component {
 							</a>
 						</div>
 						<div style={styles.socialMedia}>
-							<span style={{ ...styles.icon, marginRight: 6 }}>
+							<a
+								target="_blank"
+								href={`https://www.facebook.com/sharer?u=${BASE_URL}/card/${
+									card.link
+								}`}
+								style={{ ...styles.icon, marginRight: 6 }}
+							>
 								<i className="fab fa-facebook-f" />
-							</span>
-							<span style={{ ...styles.icon, marginRight: 6 }}>
+							</a>
+
+							<a
+								target="_blank"
+								href={`https://www.twitter.com/share?text=${
+									card.title
+								}&url=${BASE_URL}/card/${card.link}`}
+								style={{ ...styles.icon, marginRight: 6 }}
+							>
 								<i className="fab fa-twitter" />
-							</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -109,9 +129,9 @@ class CardDetails extends React.Component {
 	get _href() {
 		const { card } = this.props
 		const newLine = '%0D%0A'
-		const link = `http://www.honestmothersdaycards.com/card/${card.link}`
-		return `mailto:?subject=${card.title}&body=${
-			card.desc
+		const link = `${BASE_URL}/card/${card.link}`
+		return `mailto:?subject=Happy Mother's Day&body=${
+			card.title
 		}${newLine}${newLine}${link}`
 	}
 }

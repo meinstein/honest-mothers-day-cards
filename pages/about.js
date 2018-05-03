@@ -18,7 +18,7 @@ const About = () => (
 			/>
 		</Head>
 		<div className="about-view-container">
-			<div className="about-view-section">
+			<div className="about-view-section margin-top">
 				<H1>Moms are awesome.</H1>
 				<H1>For real, honest reasons.</H1>
 				<Text style={{ marginTop: 20 }}>
@@ -32,18 +32,16 @@ const About = () => (
 				<Small style={{ marginTop: 20 }}>
 					Cards by{' '}
 					<Anchor href="http://www.clarejensen.com/">Clare Jensen</Anchor> and{' '}
-					<Anchor href="http://www.taylormblack.com/">Taylor Black</Anchor>.
+					<Anchor href="http://www.taylormblack.com/">Taylor Black</Anchor>
 				</Small>
-				<Small style={{ marginTop: 20 }}>
+				<Small>
 					Website by{' '}
 					<Anchor href="https://github.com/meinstein">Max Einstein</Anchor>
 				</Small>
-				<Small style={{ marginTop: 20 }}>
-					Ohno Blazeface Italic from{' '}
-					<Anchor href="http://www.ohnotype.co/">Ohno Type Co.</Anchor>
-				</Small>
 				<Small style={{ marginBottom: 20 }}>
-					And Lauweriks Regular by{' '}
+					Fonts: Ohno Blazeface Italic from{' '}
+					<Anchor href="http://www.ohnotype.co/">Ohno Type Co.</Anchor> and
+					Lauweriks Regular by{' '}
 					<Anchor href="http://nicksherman.com/">Nick Sherman</Anchor>
 				</Small>
 			</div>
@@ -56,9 +54,10 @@ const About = () => (
 			</div>
 			<div className="about-view-section">
 				<img src="/static/about/taylor.jpg" style={styles.img} />
-				<Small style={{ margin: '20px 0' }}>
-					Julie, Thanks for the chill AF upbringing. Love, Taylor
+				<Small style={{ marginTop: 20 }}>
+					Julie, Thanks for the chill AF upbringing.
 				</Small>
+				<Small style={{ marginBottom: 20 }}>Love, Taylor</Small>
 			</div>
 		</div>
 	</Container>
