@@ -12,7 +12,7 @@ import {
 } from '../../components'
 import styles from './styles'
 
-const BASE_URL = 'https://honestmothersdaycards.herokuapp.com'
+export const BASE_URL = 'https://honestmothersdaycards.herokuapp.com'
 
 const Instructions = () => (
 	<div style={{ marginTop: 24 }}>

@@ -1,11 +1,11 @@
 import NextHead from 'next/head'
 import { string } from 'prop-types'
+import { BASE_URL } from '../CardDetails'
 
-const baseUrl = 'https://www.honestmothersdaycards.herokuapp.com'
 const defaultDescription =
 	"Mom's are awesome. For real, honest reasons. This Mother's Day, tell your mom why you really love her with a free, honest Mother's Day card."
-const defaultOGURL = baseUrl
-const defaultOGImage = `${baseUrl}/static/logo.png`
+const defaultOGURL = BASE_URL
+const defaultOGImage = `${BASE_URL}/static/logo.png`
 const defaultOGImageWidth = 1092
 const defaultOGImageHeight = 505
 
