@@ -12,7 +12,7 @@ const defaultOGImageHeight = 505
 const Head = props => (
 	<NextHead>
 		<meta charSet="UTF-8" />
-		<title>{props.title || "Honest Mother's Day Cards"}</title>
+		<title>Honest Mother's Day Cards</title>
 		<meta
 			name="description"
 			content={props.description || defaultDescription}

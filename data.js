@@ -4,7 +4,7 @@ export default [
 		link: 'skull',
 		title: 'Thank you for pushing my skull out of your vagina.',
 		desc:
-			'Must have hurt like hell. And to think you did all of that for me? Wow, what a woman.',
+			'Must have hurt like hell. And to think you did that all for me? Wow, what a woman.',
 		font_name: 'Viktor Script',
 		font_creator: 'Erik Marinovich',
 		font_creator_link: 'http://www.erikmarinovich.com/'
@@ -27,7 +27,7 @@ export default [
 		desc:
 			'Had I been your boyfriend, you would have dumped me. Had I been your sister, you would have slapped me. And yet all you did was love me. Thank you.',
 		font_name: 'Zenith',
-		font_creator: 'Jonathan Ross',
+		font_creator: 'David Jonathan Ross',
 		font_creator_link: 'https://djr.com/'
 	},
 	{
@@ -47,7 +47,7 @@ export default [
 		desc:
 			'Because today is about you. Not me … and the flat feet, pale skin, short temper and loud-drunk gene you gave me. But hey, thanks for the legs.',
 		font_name: 'Crayonette',
-		font_creator: 'Jonathan Ross',
+		font_creator: 'David Jonathan Ross',
 		font_creator_link: 'https://djr.com/'
 	},
 	{
