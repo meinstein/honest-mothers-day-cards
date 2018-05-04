@@ -29,10 +29,7 @@ class Card extends React.Component {
 			<img
 				ref={node => (this.img = node)}
 				className={this.state.loaded ? 'fade-in-card' : 'hidden-card'}
-				onLoad={() => {
-					console.log('loaded')
-					this.setState({ isLoading: false })
-				}}
+				onLoad={() => this._handleImageLoaded()}
 				style={{ maxWidth: '100%', height: 'auto', ...style }}
 				src={`/static/cards/png/${link}.png`}
 			/>
