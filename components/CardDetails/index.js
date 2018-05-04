@@ -1,5 +1,6 @@
 import React from 'react'
 // local
+import { logEvent } from '../../util'
 import {
 	Card,
 	Button,
@@ -95,6 +96,9 @@ class CardDetails extends React.Component {
 								href={`/static/cards/pdf/${card.link}.pdf`}
 								target="_blank"
 								style={{ ...styles.btn, marginRight: 12 }}
+								onClick={() =>
+									logEvent({ category: 'buttons', action: 'print' })
+								}
 							>
 								<Button>
 									<div style={styles.btnTxt}>print</div>
@@ -104,12 +108,21 @@ class CardDetails extends React.Component {
 								href={`/static/cards/jpg/${card.link}.jpg`}
 								download={card.link}
 								style={{ ...styles.btn, marginRight: 12 }}
+								onClick={() =>
+									logEvent({ category: 'buttons', action: 'download' })
+								}
 							>
 								<Button>
 									<div style={styles.btnTxt}>download</div>
 								</Button>
 							</a>
-							<a href={this._href} style={styles.btn}>
+							<a
+								href={this._href}
+								style={styles.btn}
+								onClick={() =>
+									logEvent({ category: 'buttons', action: 'email' })
+								}
+							>
 								<Button>
 									<div style={styles.btnTxt}>email</div>
 								</Button>
@@ -122,6 +135,9 @@ class CardDetails extends React.Component {
 									card.link
 								}`}
 								style={{ ...styles.icon, marginRight: 6 }}
+								onClick={() =>
+									logEvent({ category: 'social', action: 'facebook' })
+								}
 							>
 								<i className="fab fa-facebook-f" />
 							</a>
@@ -132,6 +148,9 @@ class CardDetails extends React.Component {
 									card.title
 								}&url=${BASE_URL}/card/${card.link}`}
 								style={{ ...styles.icon, marginRight: 6 }}
+								onClick={() =>
+									logEvent({ category: 'social', action: 'twitter' })
+								}
 							>
 								<i className="fab fa-twitter" />
 							</a>
