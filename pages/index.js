@@ -7,20 +7,21 @@ const styles = {
 		width: '100%',
 		display: 'grid',
 		gridGap: 36,
-		gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-		flex: 1
+		gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))'
 	}
 }
 
 export default () => (
 	<Container>
 		<Head />
-		<section style={styles.gridContainer}>
-			{data.map((cardData, idx) => (
-				<a key={idx} href={`/card/${cardData.link}`}>
-					<Card {...cardData} />
-				</a>
-			))}
-		</section>
+		<div style={{ flex: 1 }}>
+			<section style={styles.gridContainer}>
+				{data.map((cardData, idx) => (
+					<a key={idx} href={`/card/${cardData.link}`}>
+						<Card {...cardData} />
+					</a>
+				))}
+			</section>
+		</div>
 	</Container>
 )
