@@ -7,7 +7,8 @@ const styles = {
 		width: '100%',
 		display: 'grid',
 		gridGap: 36,
-		gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))'
+		gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+		flex: 1
 	}
 }
 

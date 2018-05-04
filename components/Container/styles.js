@@ -18,10 +18,5 @@ export default {
 	header: {
 		maxWidth: 500,
 		marginBottom: 48
-	},
-	gridContainer: {
-		display: 'grid',
-		gridGap: 36,
-		gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))'
 	}
 }
