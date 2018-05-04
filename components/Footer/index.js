@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 // local
 import { Header } from '..'
+import Heart from './Heart'
 import styles from './styles'
 
 const Footer = () => (
@@ -10,7 +11,7 @@ const Footer = () => (
 			About
 		</a>
 		<div style={{ width: '33.33%', textAlign: 'center' }}>
-			<img src="/static/heart.svg" style={{ width: 60 }} />
+			<Heart style={styles.heart} />
 		</div>
 		<a style={styles.link} href="/contact">
 			Contact

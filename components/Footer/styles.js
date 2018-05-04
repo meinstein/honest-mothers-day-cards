@@ -13,5 +13,9 @@ export default {
 		color: colors.RED,
 		width: '33.33%',
 		textAlign: 'center'
+	},
+	heart: {
+		color: colors.RED,
+		width: 60
 	}
 }

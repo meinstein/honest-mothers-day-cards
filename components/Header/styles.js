@@ -13,6 +13,7 @@ export default {
 		height: 'auto',
 		width: '100%',
 		minWidth: 200,
-		maxWidth: 600
+		maxWidth: 600,
+		fill: colors.RED
 	}
 }
