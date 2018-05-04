@@ -52,7 +52,7 @@
 }
 
 .fade-in-card {
-	animation: fade-in-card 350ms ease-in-out both;
+	animation: fade-in-card 500ms ease-in-out both;
 }
 
 .hidden-card {
