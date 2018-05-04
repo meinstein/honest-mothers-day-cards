@@ -22,7 +22,7 @@ const Instructions = () => (
 		<Small>Print a foldable card file.</Small>
 		<Small>Download to share on Instagram.</Small>
 		<Small>Email a full-frame image.</Small>
-		<Small>Or share on Facebook and Twitter.</Small>
+		<Small>Share on Facebook and Twitter.</Small>
 	</div>
 )
 
