@@ -1,0 +1,88 @@
+/* --- fonts --- */
+@font-face {
+	font-family: Lauweriks;
+	src: url('../fonts/Lauweriks-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: Ohno;
+	src: url('../fonts/OhnoBlazefaceItalic-72Point.woff') format('woff');
+}
+
+/* --- about view --- */
+.about-view-container {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.about-view-section {
+	width: 30%;
+}
+
+.margin-top {
+	margin-top: 32px;
+}
+
+@media only screen and (max-width: 800px) {
+	.about-view-container {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.about-view-section {
+		width: 100%;
+	}
+
+	.margin-top {
+		margin-top: 0;
+	}
+}
+
+/* --- card component --- */
+@keyframes fade-in-card {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-in-card {
+	animation: fade-in-card 350ms ease-in-out both;
+}
+
+.hidden-card {
+	opacity: 0;
+}
+
+/* --- card details container --- */
+.card-details-container {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card-details-section {
+	width: 45%;
+}
+
+@media only screen and (max-width: 800px) {
+	.card-details-container {
+		flex-direction: column;
+	}
+
+	.card-details-section {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1250px) {
+	.chevron {
+		display: none;
+	}
+}

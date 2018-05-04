@@ -52,13 +52,7 @@ class CardDetails extends React.Component {
 					ogImageWidth={1275}
 					ogImageHeight={1650}
 					url={`${BASE_URL}${pathname}`}
-				>
-					<link
-						rel="stylesheet"
-						type="text/css"
-						href="/static/styles/card-details-container.css"
-					/>
-				</Head>
+				/>
 				<div className="card-details-container">
 					<div className="card-details-section">
 						<Card {...card} />

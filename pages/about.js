@@ -10,13 +10,7 @@ const styles = {
 
 const About = () => (
 	<Container>
-		<Head>
-			<link
-				rel="stylesheet"
-				type="text/css"
-				href="/static/styles/about-view.css"
-			/>
-		</Head>
+		<Head />
 		<div className="about-view-container">
 			<div className="about-view-section margin-top">
 				<H1>Moms are awesome.</H1>
