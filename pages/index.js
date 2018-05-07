@@ -14,7 +14,7 @@ const styles = {
 export default () => (
 	<Container>
 		<Head />
-		<div style={{ flex: 1 }}>
+		<div style={{ flex: 1, width: '100%' }}>
 			<section style={styles.gridContainer}>
 				{data.map((cardData, idx) => (
 					<a key={idx} href={`/card/${cardData.link}`}>
