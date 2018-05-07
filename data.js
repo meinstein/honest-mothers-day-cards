@@ -91,7 +91,7 @@ export default [
 		id: 9,
 		bgColor: '#4b5dc3',
 		link: 'balls',
-		title: 'Thanks for getting me out of dad’s balls.',
+		title: 'Thanks for getting me out of Dad’s balls.',
 		desc:
 			'Without you, I’d just be a sperm in dad’s scrotum. Major props for getting me out of there.',
 		font_name: 'Sloop',
