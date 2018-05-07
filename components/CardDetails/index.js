@@ -14,7 +14,7 @@ import {
 import data from '../../data'
 import styles from './styles'
 
-export const BASE_URL = 'http://www.HonestMothersDayCards.com'
+export const BASE_URL = 'http://www.honestmothersdaycards.com'
 
 const Instructions = () => (
 	<div style={{ marginTop: 24 }}>
