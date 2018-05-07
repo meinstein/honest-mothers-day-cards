@@ -48,7 +48,7 @@ class CardDetails extends React.Component {
 				</a>
 				<Head
 					title={card.title}
-					ogImage={`/static/cards/png/${card.link}.png`}
+					ogImage={`${BASE_URL}/static/cards/png/${card.link}.png`}
 					ogImageWidth={1275}
 					ogImageHeight={1650}
 					url={`${BASE_URL}${pathname}`}
