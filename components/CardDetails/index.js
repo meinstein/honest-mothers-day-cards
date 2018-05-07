@@ -14,7 +14,7 @@ import {
 import data from '../../data'
 import styles from './styles'
 
-export const BASE_URL = 'http://www.honestmothersdaycards.com'
+export const BASE_URL = 'https://www.honestmothersdaycards.com'
 
 const Instructions = () => (
 	<div style={{ marginTop: 24 }}>
@@ -48,9 +48,7 @@ class CardDetails extends React.Component {
 				</a>
 				<Head
 					title={card.title}
-					ogImage={`${BASE_URL}/static/cards/png/${card.link}.png`}
-					ogImageWidth={1275}
-					ogImageHeight={1650}
+					ogImage={`${BASE_URL}/static/cards/social/${card.link}.jpg`}
 					url={`${BASE_URL}${pathname}`}
 				/>
 				<div className="card-details-container">

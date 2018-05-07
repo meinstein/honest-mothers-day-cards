@@ -5,9 +5,9 @@ import { BASE_URL } from '../CardDetails'
 const defaultDescription =
 	"Mom's are awesome. For real, honest reasons. This Mother's Day, tell your mom why you really love her with a free, honest Mother's Day card."
 const defaultOGURL = BASE_URL
-const defaultOGImage = `${BASE_URL}/static/cards/jpg/social.jpg`
-const defaultOGImageWidth = 750
-const defaultOGImageHeight = 488
+const defaultOGImage = `${BASE_URL}/static/cards/social/skull.jpg`
+const defaultOGImageWidth = 1000
+const defaultOGImageHeight = 651
 
 const Head = props => (
 	<NextHead>
