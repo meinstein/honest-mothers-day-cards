@@ -12,8 +12,8 @@ export default {
 	img: {
 		height: 'auto',
 		width: '100%',
-		minWidth: 200,
-		maxWidth: 600,
+		minWidth: 175,
+		maxWidth: 300,
 		fill: colors.RED
 	}
 }

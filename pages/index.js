@@ -8,7 +8,7 @@ const styles = {
 	gridContainer: {
 		width: '100%',
 		display: 'grid',
-		gridGap: 36,
+		gridGap: 24,
 		gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))'
 	}
 }

@@ -15,8 +15,8 @@ class Card extends React.Component {
 		return (
 			<div style={{ position: 'relative' }}>
 				<svg
-					width="600"
-					height="777"
+					width="1275px"
+					height="1651px"
 					version="1.1"
 					xmlns="http://www.w3.org/2000/svg"
 					style={{ maxWidth: '100%', height: 'auto' }}
@@ -30,8 +30,8 @@ class Card extends React.Component {
 						maxWidth: '100%',
 						height: 'auto',
 						position: 'absolute',
-						top: 0,
 						left: 0,
+						right: 0,
 						...style
 					}}
 					onLoad={() => this.setState({ loaded: true })}

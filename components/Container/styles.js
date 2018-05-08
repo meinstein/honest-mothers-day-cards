@@ -13,7 +13,7 @@ export default {
 		flexDirection: 'column',
 		alignItems: 'center',
 		maxWidth: 1080,
-		padding: '48px 36px'
+		padding: '48px 24px'
 	},
 	header: {
 		maxWidth: 500,
