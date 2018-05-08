@@ -8,7 +8,6 @@ import styles from './styles'
 
 const Footer = ({ pathname }) => (
 	<footer style={styles.container}>
-		{console.log(pathname)}
 		<a style={styles.link} href="/about">
 			About
 		</a>
