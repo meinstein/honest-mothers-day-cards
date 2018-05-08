@@ -39,7 +39,6 @@ const Head = props => (
 			property="og:image:height"
 			content={props.ogImageHeight || defaultOGImageHeight}
 		/>
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" />
 		{props.children}
 	</NextHead>
 )

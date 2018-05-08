@@ -1,5 +1,6 @@
 import { fonts, colors } from '../styles'
 import { Container, Head, H1, Text, Small, Anchor } from '../components'
+import { getInitialProps } from '../util'
 
 const styles = {
 	img: {
@@ -8,8 +9,8 @@ const styles = {
 	}
 }
 
-const About = () => (
-	<Container>
+const About = ({ pathname }) => (
+	<Container pathname={pathname}>
 		<Head />
 		<div className="about-view-container">
 			<div className="about-view-section margin-top">
@@ -56,5 +57,7 @@ const About = () => (
 		</div>
 	</Container>
 )
+
+About.getInitialProps = getInitialProps
 
 export default About

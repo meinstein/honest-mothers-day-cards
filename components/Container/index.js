@@ -19,7 +19,7 @@ class Container extends React.Component {
 				<div style={styles.subContainer}>
 					<Header style={styles.header} />
 					{this.props.children}
-					<Footer />
+					<Footer pathname={this.props.pathname} />
 				</div>
 			</div>
 		)

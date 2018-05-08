@@ -17,5 +17,9 @@ export default {
 	heart: {
 		color: colors.RED,
 		width: 60
+	},
+	social: {
+		display: 'flex',
+		justifyContent: 'center'
 	}
 }

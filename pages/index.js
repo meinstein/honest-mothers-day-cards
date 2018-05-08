@@ -1,6 +1,8 @@
 import { Head, Card, Container } from '../components'
+import { getInitialProps } from '../util'
 import { colors } from '../styles'
 import data from '../data'
+import { PassThrough } from 'stream'
 
 const styles = {
 	gridContainer: {
@@ -11,8 +13,8 @@ const styles = {
 	}
 }
 
-export default () => (
-	<Container>
+const Home = ({ pathname }) => (
+	<Container pathname={pathname}>
 		<Head />
 		<div style={{ flex: 1, width: '100%' }}>
 			<section style={styles.gridContainer}>
@@ -25,3 +27,7 @@ export default () => (
 		</div>
 	</Container>
 )
+
+Home.getInitialProps = getInitialProps
+
+export default Home

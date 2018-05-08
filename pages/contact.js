@@ -1,5 +1,6 @@
-import { Container, Head, Text } from '../components'
 // local
+import { Container, Head, Text } from '../components'
+import { getInitialProps } from '../util'
 import { colors, fonts } from '../styles'
 
 const styles = {
@@ -15,8 +16,8 @@ const styles = {
 	}
 }
 
-const Contact = () => (
-	<Container>
+const Contact = ({ pathname }) => (
+	<Container pathname={pathname}>
 		<Head />
 		<div style={styles.container}>
 			<Text>Contact Clare Jensen and Taylor Black at:</Text>
@@ -24,5 +25,7 @@ const Contact = () => (
 		</div>
 	</Container>
 )
+
+Contact.getInitialProps = getInitialProps
 
 export default Contact

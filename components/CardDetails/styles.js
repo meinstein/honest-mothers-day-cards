@@ -34,17 +34,6 @@ export default {
 		display: 'flex',
 		marginTop: 12
 	},
-	icon: {
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center',
-		width: 32,
-		height: 32,
-		fontSize: 20,
-		border: `1px solid ${colors.RED}`,
-		borderRadius: '50%',
-		color: colors.RED
-	},
 	chevronLeft: {
 		...chevronBase,
 		left: 32
@@ -52,5 +41,10 @@ export default {
 	chevronRight: {
 		...chevronBase,
 		right: 32
+	},
+	chevron: {
+		fill: 'white',
+		width: 36,
+		height: 36
 	}
 }

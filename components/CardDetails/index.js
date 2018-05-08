@@ -9,7 +9,11 @@ import {
 	H1,
 	Text,
 	Small,
-	Anchor
+	Anchor,
+	IconFacebook,
+	IconTwitter,
+	IconChevronLeft,
+	IconChevronRight
 } from '../../components'
 import data from '../../data'
 import styles from './styles'
@@ -41,10 +45,10 @@ class CardDetails extends React.Component {
 		return (
 			<Container>
 				<a className="chevron" style={styles.chevronLeft} href={prevCardLink}>
-					<i className="fas fa-chevron-left" />
+					<IconChevronLeft className="chevron" style={styles.chevron} />
 				</a>
 				<a className="chevron" style={styles.chevronRight} href={nextCardLink}>
-					<i className="fas fa-chevron-right" />
+					<IconChevronRight className="chevron" style={styles.chevron} />
 				</a>
 				<Head
 					title={card.title}
@@ -121,31 +125,17 @@ class CardDetails extends React.Component {
 							</a>
 						</div>
 						<div style={styles.socialMedia}>
-							<a
-								target="_blank"
+							<IconFacebook
 								href={`https://www.facebook.com/sharer?u=${BASE_URL}/card/${
 									card.link
 								}`}
-								style={{ ...styles.icon, marginRight: 6 }}
-								onClick={() =>
-									logEvent({ category: 'social', action: 'facebook' })
-								}
-							>
-								<i className="fab fa-facebook-f" />
-							</a>
-
-							<a
-								target="_blank"
+							/>
+							<div style={{ width: 6 }} />
+							<IconTwitter
 								href={`https://www.twitter.com/share?text=${
 									card.title
 								}&url=${BASE_URL}/card/${card.link}`}
-								style={{ ...styles.icon, marginRight: 6 }}
-								onClick={() =>
-									logEvent({ category: 'social', action: 'twitter' })
-								}
-							>
-								<i className="fab fa-twitter" />
-							</a>
+							/>
 						</div>
 					</div>
 				</div>
