@@ -20,7 +20,11 @@ const Head = props => (
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="/static/favicon.png" />
-		<link rel="stylesheet" type="text/css" href="/static/styles/reset.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		/>
 		<link rel="stylesheet" type="text/css" href="/static/styles/styles.css" />
 		<meta property="og:url" content={props.url || defaultOGURL} />
 		<meta property="og:title" content={props.title || defaultTitle} />
@@ -41,6 +45,7 @@ const Head = props => (
 			property="og:image:height"
 			content={props.ogImageHeight || defaultOGImageHeight}
 		/>
+
 		{props.children}
 	</NextHead>
 )
